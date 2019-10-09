@@ -1,0 +1,3 @@
+class People:
+    embeddings = []
+    names = []

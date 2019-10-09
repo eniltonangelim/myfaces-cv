@@ -1,0 +1,6 @@
+imutils
+opencv-python
+flask
+sphinx
+numpy
+scikit-learn
