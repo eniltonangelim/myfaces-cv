@@ -1,6 +1,7 @@
 from scafaces.domain.ports.DataSet import DataSet
 from scafaces.domain.ports.FindUsecases import FindUsecases
 
+
 class FindImages(FindUsecases):
 
     def __init__(self, repository: DataSet):

@@ -3,6 +3,7 @@ from scafaces.domain.ports.FindUsecases import FindUsecases
 from scafaces.domain.models.People import People
 from typing import List
 
+
 class FindDetector(FindUsecases):
 
     def __init__(self, detectable: Detectable):

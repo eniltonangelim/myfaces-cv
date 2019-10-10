@@ -4,6 +4,7 @@ from os import path, environ
 import cv2
 import pickle
 
+
 class OpenCVEmbedded(Embeddable):
 
     def __init__(self):

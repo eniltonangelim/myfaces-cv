@@ -1,6 +1,7 @@
 from abc import ABCMeta, abstractmethod
 from scafaces.domain.ports.FindUsecases import FindUsecases
 from scafaces.domain.ports.CreateUsecases import CreateUsecases
+from scafaces.domain.ports.RecognizeUsecases import RecognizeUsecases
 
 
 class Configurable(metaclass=ABCMeta):
@@ -24,4 +25,8 @@ class Configurable(metaclass=ABCMeta):
     @abstractmethod
     def getTrain(self) -> CreateUsecases:
         raise NotImplementedError("configuration must define getTrain method")
+
+    @abstractmethod
+    def recognizeEmbedder(self) -> RecognizeUsecases:
+        raise NotImplementedError("configuration must define recognizeEmbedder method")
 

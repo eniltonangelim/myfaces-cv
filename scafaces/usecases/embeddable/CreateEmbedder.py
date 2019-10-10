@@ -2,6 +2,7 @@ from scafaces.domain.ports.Embeddable import Embeddable
 from scafaces.domain.ports.CreateUsecases import CreateUsecases
 from scafaces.domain.models.People import People
 
+
 class CreateEmbedder(CreateUsecases):
 
     def __init__(self, embeddable: Embeddable):
@@ -12,4 +13,3 @@ class CreateEmbedder(CreateUsecases):
 
     def recognizer(self):
         pass
-

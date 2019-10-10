@@ -6,7 +6,6 @@ import cv2, imutils
 import numpy as np
 
 
-
 class OpenCVDetector(Detectable):
 
     def __init__(self):
@@ -22,6 +21,8 @@ class OpenCVDetector(Detectable):
     def detector(self, images: List[str], embedder = None) -> People:
         for (i, imagePath) in enumerate(images):
             name = imagePath.split(path.sep)[-2]
+
+            print("Detector:  {0}".format(name))
 
             image = cv2.imread(imagePath)
             image = imutils.resize(image, width=600)

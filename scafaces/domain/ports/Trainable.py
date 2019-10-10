@@ -1,6 +1,7 @@
 from abc import ABCMeta, abstractmethod
 from typing import NoReturn
 
+
 class Trainable(metaclass=ABCMeta):
 
     @abstractmethod

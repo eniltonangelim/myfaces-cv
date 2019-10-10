@@ -23,7 +23,7 @@ class SkLearnTrain(Trainable):
 
         self.save(recognizer, self.__le)
 
-    def save(self, recognizer, labelEncoder):
+    def save(self, recognizer, labelEncoder) -> NoReturn:
 
         rec = open(self.__recognizer, "wb")
         rec.write(pickle.dumps(recognizer))
