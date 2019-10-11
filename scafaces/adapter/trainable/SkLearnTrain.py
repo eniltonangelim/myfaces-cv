@@ -21,14 +21,12 @@ class SkLearnTrain(Trainable):
         recognizer = SVC(C=1.0, kernel="linear", probability=True)
         recognizer.fit(data["embeddings"], labels)
 
-        self.save(recognizer, self.__le)
+        self.save(self.__recognizer, recognizer)
+        self.save(self.__labelEncoder, self.__le)
 
-    def save(self, recognizer, labelEncoder) -> NoReturn:
 
-        rec = open(self.__recognizer, "wb")
-        rec.write(pickle.dumps(recognizer))
+    def save(self, file, data) -> NoReturn:
+
+        rec = open(file, "wb")
+        rec.write(pickle.dumps(data))
         rec.close()
-
-        label = open(self.__labelEncoder, "wb")
-        label.write(pickle.dumps(labelEncoder))
-        label.close()

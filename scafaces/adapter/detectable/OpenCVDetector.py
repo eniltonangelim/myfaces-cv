@@ -22,8 +22,6 @@ class OpenCVDetector(Detectable):
         for (i, imagePath) in enumerate(images):
             name = imagePath.split(path.sep)[-2]
 
-            print("Detector:  {0}".format(name))
-
             image = cv2.imread(imagePath)
             image = imutils.resize(image, width=600)
             (h, w) = image.shape[:2]
