@@ -14,7 +14,7 @@ class Application():
 
         self.__usecases.getCreateEmbedded().create(model)
         self.__usecases.getTrain().recognizer()
-        self.__usecases.recognizeEmbedder().identify(embedder, "/home/angelim/Downloads/DSC_0043.JPG")
+        self.__usecases.recognizeEmbedder().identify(embedder, "/home/angelim/Downloads/amy.jpg")
 
 
 if __name__ == '__main__':
